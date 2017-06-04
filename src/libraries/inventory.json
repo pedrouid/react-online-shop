@@ -5,7 +5,7 @@
     {
       "sku" : "SQ4623109",
       "productName" : "Red Classic Trenchcoat",
-      "category": "Coats",
+      "category": "coats",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -34,7 +34,7 @@
     {
       "sku" : "SQ4623110",
       "productName" : "Kahki Classic Trenchcoat",
-      "category": "Coats",
+      "category": "coats",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -63,7 +63,7 @@
     {
       "sku" : "SQ4623111",
       "productName" : "White Woods Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -92,7 +92,7 @@
     {
       "sku" : "SQ4623112",
       "productName" : "Navy Dress with Lace Vest",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -121,7 +121,7 @@
     {
       "sku" : "SQ4623113",
       "productName" : "Blue Owl Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -150,7 +150,7 @@
     {
       "sku" : "SQ4623114",
       "productName" : "Red Forest Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "27.00",
         "retailValue" : "40.00",
@@ -179,7 +179,7 @@
     {
       "sku" : "SQ4623115",
       "productName" : "Pretty Cheetah Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -208,7 +208,7 @@
     {
       "sku" : "SQ4623116",
       "productName" : "Green Courtyard Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -237,7 +237,7 @@
     {
       "sku" : "SQ4623117",
       "productName" : "Red Party Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -266,7 +266,7 @@
     {
       "sku" : "SQ4623118",
       "productName" : "Black Party Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -295,7 +295,7 @@
     {
       "sku" : "SQ4623119",
       "productName" : "White Party Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -324,7 +324,7 @@
     {
       "sku" : "SQ4623120",
       "productName" : "Sicilian Floral Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -353,7 +353,7 @@
     {
       "sku" : "SQ4623121",
       "productName" : "Classic Cheetah Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -382,7 +382,7 @@
     {
       "sku" : "SQ4623122",
       "productName" : "Sicilian Shorts & Top",
-      "category": "Combos",
+      "category": "combos",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -411,7 +411,7 @@
     {
       "sku" : "SQ4623123",
       "productName" : "Classic Burgundy Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -440,7 +440,7 @@
     {
       "sku" : "SQ4623124",
       "productName" : "Green Yard Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -469,7 +469,7 @@
     {
       "sku" : "SQ4623125",
       "productName" : "Pink Vine Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -498,7 +498,7 @@
     {
       "sku" : "SQ4623126",
       "productName" : "Daisy Skirt & Top",
-      "category": "Combos",
+      "category": "combos",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -527,7 +527,7 @@
     {
       "sku" : "SQ4623127",
       "productName" : "Red Lace Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -556,7 +556,7 @@
     {
       "sku" : "SQ4623128",
       "productName" : "White Lace Dress",
-      "category": "Dresses",
+      "category": "dresses",
       "unitPrice" : {
         "saleValue": "35.00",
         "retailValue" : "20.00",
@@ -585,7 +585,7 @@
     {
       "sku" : "SQ4623129",
       "productName" : "Owl Crossbody Bag",
-      "category": "Accessories",
+      "category": "accessories",
       "unitPrice" : {
         "saleValue": "20.00",
         "retailValue" : "10.00",

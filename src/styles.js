@@ -36,21 +36,17 @@ export const padding = {
 };
 
 export const responsive = {
-  xxs: {
-    min: 'min-width: 319px',
-    max: 'max-width: 320px'
-  },
   xs: {
     min: 'min-width: 479px',
     max: 'max-width: 480px'
   },
   sm: {
-    min: 'min-width: 767px',
-    max: 'max-width: 768px'
+    min: 'min-width: 599px',
+    max: 'max-width: 600px'
   },
   md: {
-    min: 'min-width: 991px',
-    max: 'max-width: 992px'
+    min: 'min-width: 899px',
+    max: 'max-width: 900px'
   },
   lg: {
     min: 'min-width: 1199px',
