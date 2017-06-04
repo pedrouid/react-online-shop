@@ -1,9 +1,9 @@
 export const colors = {
   white: '255, 255, 255',
   black: '0, 0, 0',
-  dark: '34, 34, 34',
+  dark: '37, 37, 37',
   grey: '221, 221, 221',
-  lightGrey: '238, 238, 238',
+  lightGrey: '248, 248, 248',
   darkGrey: '128, 128, 128',
   blue: '97, 218, 251',
   lightBlue: '197, 242, 255',
@@ -69,11 +69,11 @@ export const globalStyles = `
   }
 
   body {
-    background: rgb(${colors.dark});
+    background: rgb(${colors.lightGrey});
     font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: ${fonts.medium};
-    color: rgb(${colors.blue});
+    color: rgb(${colors.dark});
     position: relative;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;

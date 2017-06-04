@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import FadeIn from './components/FadeIn';
-import Column from './components/Column';
-import Login from './pages/Login';
-import Logout from './pages/Logout';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 
 const StyledWrapper = styled(FadeIn)`
@@ -21,14 +20,11 @@ class Router extends Component {
   }
   render = () => (
     <StyledWrapper>
-      <Column>
-        <Switch>
-          <Route exact path="/" render={() => <Redirect to="/login" />} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/logout" component={Logout} />
-          <Route component={NotFound} />
-        </Switch>
-      </Column>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cart" component={Cart} />
+        <Route component={NotFound} />
+      </Switch>
     </StyledWrapper>
   );
 }
