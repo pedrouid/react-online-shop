@@ -95,6 +95,31 @@ export const globalStyles = `
     color: inherit;
   }
 
+  h1 {
+    font-size: ${fonts.h1};
+  }
+  h2 {
+    font-size: ${fonts.h2};
+  }
+  h3 {
+    font-size: ${fonts.h3};
+  }
+  h4 {
+    font-size: ${fonts.h4};
+  }
+  h5 {
+    font-size: ${fonts.h5};
+  }
+  h6 {
+    font-size: ${fonts.h6};
+  }
+  p {
+    font-size: ${fonts.medium};
+  }
+  span {
+    font-size: ${fonts.small};
+  }
+
   div {
     width: 100%;
   }

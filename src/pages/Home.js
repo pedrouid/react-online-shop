@@ -25,7 +25,7 @@ class Home extends Component {
         exact
         path="/:route"
         render={props => (
-          <ProductView category={this.props.location.pathname.slice(1)} />
+          <ProductView view={this.state.view} />
         )}
       />
     </div>

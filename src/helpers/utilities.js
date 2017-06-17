@@ -101,3 +101,31 @@ export const isMobile = () => {
   if ('ontouchstart' in window && Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 800) return true;
   return false;
 };
+
+
+/**
+ * @desc converts titles to snakeCase for pathnames
+ * @param  {String}  [string='']
+ * @return {String}
+ */
+export const snakeCase = string =>
+  string.toLowerCase().replace('&', 'and').replace(/\s/g, '-');
+
+
+/**
+ * @desc returns currency symbol
+ * @param {String} currency
+ * @return {String}
+ */
+export const getCurrencySymbol = (currency) => {
+  switch (currency.toUpperCase()) {
+    case 'GBP':
+      return '£';
+    case 'EUR':
+      return '€';
+    case 'USD':
+      return '$';
+    default:
+      return '£';
+  }
+};

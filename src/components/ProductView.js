@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Inventory from '../libraries/inventory.json';
+import SingleProduct from './SingleProduct';
+import Link from './Link';
 import { transitions, colors, responsive } from '../styles';
 
 const StyledContainer = styled.div`
@@ -95,25 +97,29 @@ const StyledPrice = styled.span`
 const displayProducts = products =>
   products.map(product => (
     <StyledCard key={product.sku}>
-      <StyledProduct imageUrl={product.imageUrl}>
-        <StyledOverlay>
-          <StyledWrapper>
-            <StyledName>{product.productName}</StyledName>
-            <StyledPrice>£{product.unitPrice.retailValue}</StyledPrice>
-            <StyledSale>£{product.unitPrice.saleValue}</StyledSale>
-          </StyledWrapper>
-        </StyledOverlay>
-      </StyledProduct>
+      <Link to={`/${product.pathname}`}>
+        <StyledProduct imageUrl={product.imageUrl}>
+          <StyledOverlay>
+            <StyledWrapper>
+              <StyledName>{product.productName}</StyledName>
+              <StyledPrice>£{product.unitPrice.retailValue}</StyledPrice>
+              <StyledSale>£{product.unitPrice.saleValue}</StyledSale>
+            </StyledWrapper>
+          </StyledOverlay>
+        </StyledProduct>
+      </Link>
     </StyledCard>
   ));
 
+const getProduct = pathname =>
+  Inventory.products.filter(product => product.pathname === pathname)[0];
 
 class ProductView extends Component {
   state = {
-    products: this.filterProducts(this.props.category)
+    products: this.filterProducts(this.props.view)
   }
-  componentWillReceiveProps({ category }) {
-    this.setState({ products: this.filterProducts(category) });
+  componentWillReceiveProps({ view }) {
+    this.setState({ products: this.filterProducts(view) });
   }
   filterProducts(category) {
     if (!category) return Inventory.products;
@@ -123,14 +129,17 @@ class ProductView extends Component {
   render() {
     return (
       <StyledContainer>
-        {displayProducts(this.state.products)}
+        {console.log(getProduct(this.props.view))}
+        {(Inventory.categories.indexOf(this.props.view) === -1)
+        ? <SingleProduct product={getProduct(this.props.view)} />
+        : displayProducts(this.state.products)}
       </StyledContainer>
     );
   }
 }
 
 ProductView.propTypes = {
-  category: PropTypes.string.isRequired
+  view: PropTypes.string.isRequired
 };
 
 export default ProductView;

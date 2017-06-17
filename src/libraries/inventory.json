@@ -1,15 +1,24 @@
 {
   "updatedAt" : 1496586325647,
+  "lastProduct": "SQ4623129",
+  "totalProducts": 21,
+  "categories": [
+    "coats",
+    "dresses",
+    "combos",
+    "accessories"
+  ],
   "products" :
   [
     {
       "sku" : "SQ4623109",
-      "productName" : "Red Classic Trenchcoat",
+      "productName": "Red Classic Trenchcoat",
+      "pathname": "red-classic-trenchcoat",
       "category": "coats",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -33,12 +42,13 @@
     },
     {
       "sku" : "SQ4623110",
-      "productName" : "Kahki Classic Trenchcoat",
+      "productName": "Kahki Classic Trenchcoat",
+      "pathname": "kahki-classic-trenchcoat",
       "category": "coats",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -62,12 +72,13 @@
     },
     {
       "sku" : "SQ4623111",
-      "productName" : "White Woods Dress",
+      "productName": "White Woods Dress",
+      "pathname": "white-woods-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -91,12 +102,13 @@
     },
     {
       "sku" : "SQ4623112",
-      "productName" : "Navy Dress with Lace Vest",
+      "productName": "Navy Dress with Lace Vest",
+      "pathname": "navy-dress-with-lace-vest",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -120,12 +132,13 @@
     },
     {
       "sku" : "SQ4623113",
-      "productName" : "Blue Owl Dress",
+      "productName": "Blue Owl Dress",
+      "pathname": "blue-owl-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -149,12 +162,13 @@
     },
     {
       "sku" : "SQ4623114",
-      "productName" : "Red Forest Dress",
+      "productName": "Red Forest Dress",
+      "pathname": "red-forest-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "27.00",
-        "retailValue" : "40.00",
-        "currency" : "GBP"
+        "retailValue": "40.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -178,12 +192,13 @@
     },
     {
       "sku" : "SQ4623115",
-      "productName" : "Pretty Cheetah Dress",
+      "productName": "Pretty Cheetah Dress",
+      "pathname": "pretty-cheetah-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -207,12 +222,13 @@
     },
     {
       "sku" : "SQ4623116",
-      "productName" : "Green Courtyard Dress",
+      "productName": "Green Courtyard Dress",
+      "pathname": "green-courtyard-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -236,12 +252,13 @@
     },
     {
       "sku" : "SQ4623117",
-      "productName" : "Red Party Dress",
+      "productName": "Red Party Dress",
+      "pathname": "red-party-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -265,12 +282,13 @@
     },
     {
       "sku" : "SQ4623118",
-      "productName" : "Black Party Dress",
+      "productName": "Black Party Dress",
+      "pathname": "black-party-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -294,12 +312,13 @@
     },
     {
       "sku" : "SQ4623119",
-      "productName" : "White Party Dress",
+      "productName": "White Party Dress",
+      "pathname": "white-party-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -323,12 +342,13 @@
     },
     {
       "sku" : "SQ4623120",
-      "productName" : "Sicilian Floral Dress",
+      "productName": "Sicilian Floral Dress",
+      "pathname": "sicilian-floral-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -352,12 +372,13 @@
     },
     {
       "sku" : "SQ4623121",
-      "productName" : "Classic Cheetah Dress",
+      "productName": "Classic Cheetah Dress",
+      "pathname": "classic-cheetah-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -381,12 +402,13 @@
     },
     {
       "sku" : "SQ4623122",
-      "productName" : "Sicilian Shorts & Top",
+      "productName": "Sicilian Shorts & Top",
+      "pathname": "sicilian-shorts-and-top",
       "category": "combos",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -410,12 +432,13 @@
     },
     {
       "sku" : "SQ4623123",
-      "productName" : "Classic Burgundy Dress",
+      "productName": "Classic Burgundy Dress",
+      "pathname": "classic-burgundy-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -439,12 +462,13 @@
     },
     {
       "sku" : "SQ4623124",
-      "productName" : "Green Yard Dress",
+      "productName": "Green Yard Dress",
+      "pathname": "green-yard-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -468,12 +492,13 @@
     },
     {
       "sku" : "SQ4623125",
-      "productName" : "Pink Vine Dress",
+      "productName": "Pink Vine Dress",
+      "pathname": "pink-vine-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -497,12 +522,13 @@
     },
     {
       "sku" : "SQ4623126",
-      "productName" : "Daisy Skirt & Top",
+      "productName": "Daisy Skirt & Top",
+      "pathname": "daisy-skirt-and-top",
       "category": "combos",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -526,12 +552,13 @@
     },
     {
       "sku" : "SQ4623127",
-      "productName" : "Red Lace Dress",
+      "productName": "Red Lace Dress",
+      "pathname": "red-lace-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -555,12 +582,13 @@
     },
     {
       "sku" : "SQ4623128",
-      "productName" : "White Lace Dress",
+      "productName": "White Lace Dress",
+      "pathname": "white-lace-dress",
       "category": "dresses",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "35.00",
-        "retailValue" : "20.00",
-        "currency" : "GBP"
+        "retailValue": "20.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
@@ -584,12 +612,13 @@
     },
     {
       "sku" : "SQ4623129",
-      "productName" : "Owl Crossbody Bag",
+      "productName": "Owl Crossbody Bag",
+      "pathname": "owl-crossbody-bag",
       "category": "accessories",
-      "unitPrice" : {
+      "unitPrice": {
         "saleValue": "20.00",
-        "retailValue" : "10.00",
-        "currency" : "GBP"
+        "retailValue": "10.00",
+        "currency": "GBP"
       },
       "variantOptions" : [
         {
