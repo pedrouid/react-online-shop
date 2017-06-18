@@ -7,9 +7,11 @@ const StyledBreadcrumbs = styled.div`
   width: 100%;
   float: left;
   text-align:left;
+  margin: 30px 0;
 `;
 
 const StyledSpan = styled.span`
+  padding: 0 5px;
   &:hover {
     opacity: 0.7;
   }
@@ -19,16 +21,20 @@ const StyledCaret = styled.span`
   font-weight: 700;
 `;
 
-const Breadcrumbs = ({ product }) => (
+const Breadcrumbs = ({ category, pathname, productName }) => (
   <StyledBreadcrumbs>
     <Link to={'/'}><StyledSpan>{'Shop'}</StyledSpan></Link>
     <StyledCaret>{'>'}</StyledCaret>
-    <Link to={`/${product.category}`}><StyledSpan>{product.category}</StyledSpan></Link>
+    <Link to={`/${category}`}><StyledSpan>{category}</StyledSpan></Link>
     <StyledCaret>{'>'}</StyledCaret>
-    <Link to={`/${product.pathname}`}><StyledSpan>{product.productName}</StyledSpan></Link>
+    <Link to={`/${pathname}`}><StyledSpan>{productName}</StyledSpan></Link>
   </StyledBreadcrumbs>
 );
 
 Breadcrumbs.propTypes = {
-  product: PropTypes.object.isRequired
+  category: PropTypes.string.isRequired,
+  pathname: PropTypes.string.isRequired,
+  productName: PropTypes.string.isRequired
 };
+
+export default Breadcrumbs;

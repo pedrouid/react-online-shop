@@ -111,9 +111,6 @@ const displayProducts = products =>
     </StyledCard>
   ));
 
-const getProduct = pathname =>
-  Inventory.products.filter(product => product.pathname === pathname)[0];
-
 class ProductView extends Component {
   state = {
     products: this.filterProducts(this.props.view)
@@ -121,6 +118,8 @@ class ProductView extends Component {
   componentWillReceiveProps({ view }) {
     this.setState({ products: this.filterProducts(view) });
   }
+  getProduct = pathname =>
+    Inventory.products.filter(product => product.pathname === pathname)[0];
   filterProducts(category) {
     if (!category) return Inventory.products;
     const products = Inventory.products.filter(x => x.category === category);
@@ -129,9 +128,8 @@ class ProductView extends Component {
   render() {
     return (
       <StyledContainer>
-        {console.log(getProduct(this.props.view))}
-        {(Inventory.categories.indexOf(this.props.view) === -1)
-        ? <SingleProduct product={getProduct(this.props.view)} />
+        {(Inventory.categories.indexOf(this.props.view) === -1 && this.props.view)
+        ? <SingleProduct product={this.getProduct(this.props.view)} />
         : displayProducts(this.state.products)}
       </StyledContainer>
     );

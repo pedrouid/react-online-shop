@@ -7,6 +7,7 @@ import { responsive } from '../styles';
 
 const StyledContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   max-width: 1200px;
   margin: 0 auto;
@@ -32,7 +33,12 @@ const StyledTitle = styled.h1`
 
 const SingleProduct = ({ product }) => (
   <StyledContainer>
-    <Breadcrumbs product={product} />
+    {console.log(product)}
+    <Breadcrumbs
+      category={product.category}
+      pathname={product.pathname}
+      productName={product.productName}
+    />
     <StyledHalf>
       <StyledImage src={product.imageUrl} />
     </StyledHalf>
