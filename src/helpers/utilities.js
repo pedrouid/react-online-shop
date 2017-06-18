@@ -111,6 +111,14 @@ export const isMobile = () => {
 export const snakeCase = string =>
   string.toLowerCase().replace('&', 'and').replace(/\s/g, '-');
 
+/**
+ * @desc  capitalize strings
+ * @param  {String}  [string='']
+ * @return {String}
+ */
+export const capitalCase = string =>
+  string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+
 
 /**
  * @desc returns currency symbol

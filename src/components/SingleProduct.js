@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Breadcrumbs from './Breadcrumbs';
+import Select from './Select';
 import Price from './Price';
 import { responsive } from '../styles';
 
@@ -30,24 +31,47 @@ const StyledTitle = styled.h1`
   font-weight: 700;
 `;
 
+const StyledOptions = styled.div`
+  padding: 10px;
+`;
 
-const SingleProduct = ({ product }) => (
-  <StyledContainer>
-    {console.log(product)}
-    <Breadcrumbs
-      category={product.category}
-      pathname={product.pathname}
-      productName={product.productName}
+const renderVariations = variants =>
+  variants.map(variant => (
+    <Select
+      onChange={({ target }) => this.setState({ options: { [variant.name]: target.value } })}
+      emptyOption={variant.name}
+      options={variant.options}
     />
-    <StyledHalf>
-      <StyledImage src={product.imageUrl} />
-    </StyledHalf>
-    <StyledHalf>
-      <StyledTitle>{product.productName}</StyledTitle>
-      <Price unitPrice={product.unitPrice} />
-    </StyledHalf>
-  </StyledContainer>
-);
+  ));
+
+
+class SingleProduct extends Component {
+  state = {
+    options: {}
+  }
+  render() {
+    const { product } = this.props;
+    return (
+      <StyledContainer>
+        <Breadcrumbs
+          category={product.category}
+          pathname={product.pathname}
+          productName={product.productName}
+        />
+        <StyledHalf>
+          <StyledImage src={product.imageUrl} />
+        </StyledHalf>
+        <StyledHalf>
+          <StyledTitle>{product.productName}</StyledTitle>
+          <Price unitPrice={product.unitPrice} />
+          <StyledOptions>
+            {renderVariations(product.variants)}
+          </StyledOptions>
+        </StyledHalf>
+      </StyledContainer>
+    );
+  }
+}
 
 SingleProduct.propTypes = {
   product: PropTypes.object.isRequired

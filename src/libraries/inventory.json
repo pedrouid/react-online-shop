@@ -20,22 +20,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584163/red_trenchcoat_blgjxh.jpg"
@@ -50,22 +43,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/khaki_trenchcoat_bu3gjq.jpg"
@@ -80,22 +66,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584164/white_woods_dress_oivzr9.jpg"
@@ -110,22 +89,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/navy_dress_vest_p1ybj6.jpg"
@@ -140,22 +112,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584160/blue_owl_dress_lrepxx.jpg"
@@ -170,22 +135,15 @@
         "retailValue": "40.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584162/red_forest_dress_airgnm.jpg"
@@ -200,22 +158,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/pretty_cheetah_dress_bc7rdq.jpg"
@@ -230,22 +181,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584160/green_courtyard_dress_skqozd.jpg"
@@ -260,22 +204,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584162/red_party_dress_x5nl9d.jpg"
@@ -290,22 +227,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584159/black_party_dress_utgywd.jpg"
@@ -320,22 +250,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584163/white_party_dress_xr1eyl.jpg"
@@ -350,22 +273,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584162/sicilian_dress_cdsugm.jpg"
@@ -380,22 +296,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584160/cheetah_print_dress_nbfaxq.jpg"
@@ -410,22 +319,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584163/sicilian_shorts_bbjzoy.jpg"
@@ -440,22 +342,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584159/burgundy_dress_msk6p8.jpg"
@@ -470,22 +365,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584160/green_yard_dress_rjzjyi.jpg"
@@ -500,22 +388,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/pink_vine_dress_qcmvov.jpg"
@@ -530,22 +411,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584164/yellow_skirt_oy3i5q.jpg"
@@ -560,22 +434,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584162/red_lace_dress_jysuc3.jpg"
@@ -590,22 +457,15 @@
         "retailValue": "20.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584163/white_lace_dress_v48jur.jpg"
@@ -620,22 +480,15 @@
         "retailValue": "10.00",
         "currency": "GBP"
       },
-      "variantOptions" : [
+      "variants" : [
         {
-          "optionName" : "Size",
-          "value" : "110 (2-3 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "120 (4-5 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "130 (6-7 years)"
-        },
-        {
-          "optionName" : "Size",
-          "value" : "140 (8-9 years)"
+          "name" : "Size",
+          "options" : [
+            "110 (2-3 years)",
+            "120 (4-5 years)",
+            "130 (6-7 years)",
+            "140 (8-9 years)"
+          ]
         }
       ],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/owl_crossbag_v0mblf.jpg"
