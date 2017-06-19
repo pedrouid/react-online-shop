@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../components/Header';
 import CartView from '../components/CartView';
 import ProductView from '../components/ProductView';
 
@@ -12,7 +11,6 @@ class Home extends Component {
   }
   render = () => (
     <div>
-      <Header changeView={this.changeView} view={this.state.view} />
       <Switch>
         <Route
           exact

@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { Switch, Route } from 'react-router-dom';
 import FadeIn from './components/FadeIn';
+import Header from './components/Header';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
-import { setSession } from './helpers/utilities';
+import { setSession, getSession } from './helpers/utilities';
 import './libraries/CSSTransitionAnimation.css';
 
 const StyledWrapper = styled(FadeIn)`
@@ -24,7 +25,9 @@ const CSSTransitionConfig = {
 
 class Router extends Component {
   componentDidMount() {
-    setSession();
+    if (!getSession()) {
+      setSession();
+    }
     window.rogueDispatch = this.context.store.dispatch;
     window.browserHistory = this.context.router.history;
   }
@@ -37,6 +40,7 @@ class Router extends Component {
           path="/"
           render={({ location }) => (
             <div>
+              <Header view={location.pathname} />
               <CSSTransitionGroup {...CSSTransitionConfig}>
                 <Route
                   location={location}
@@ -52,6 +56,7 @@ class Router extends Component {
           path="/:route"
           render={({ location }) => (
             <div>
+              <Header view={location.pathname} />
               <CSSTransitionGroup {...CSSTransitionConfig}>
                 <Route
                   location={location}

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { authenticationReducer } from './_cart';
+import { cartReducer } from './_cart';
 
 export default combineReducers({
-  cart: authenticationReducer
+  cart: cartReducer
 });

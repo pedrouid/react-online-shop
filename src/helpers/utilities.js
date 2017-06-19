@@ -15,8 +15,8 @@ export const setSession = (
     basket,
     expires,
   };
-  localStorage.setItem('USER_SESSION', JSON.stringify(session));
-  console.log('USER_SESSION', session);
+  localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(session));
+  console.log('CUSTOMER_SESSION', session);
 };
 
 /**
@@ -24,7 +24,7 @@ export const setSession = (
  * @return {Object}
  */
 export const getSession = () => {
-  const session = localStorage.getItem('USER_SESSION');
+  const session = localStorage.getItem('CUSTOMER_SESSION');
   return JSON.parse(session);
 };
 
@@ -35,7 +35,7 @@ export const getSession = () => {
  */
 export const updateBasket = (basket = '') => {
   const newSession = { ...getSession(), basket };
-  return localStorage.setItem('USER_SESSION', JSON.stringify(newSession));
+  return localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(newSession));
 };
 
 /**
@@ -43,7 +43,7 @@ export const updateBasket = (basket = '') => {
  * @return {Void}
  */
 export const deleteSession = () => {
-  localStorage.removeItem('USER_SESSION');
+  localStorage.removeItem('CUSTOMER_SESSION');
 };
 
 /**
@@ -76,7 +76,7 @@ export const refreshSession = () => {
   };
 
   if (auth) {
-    localStorage.setItem('USER_SESSION', getRefreshedSession(auth, 300000)); // 5 min
+    localStorage.setItem('CUSTOMER_SESSION', getRefreshedSession(auth, 300000)); // 5 min
     return refreshTimeout(240000); // 4 min
   }
 };
