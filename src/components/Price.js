@@ -14,10 +14,15 @@ const StyledSpan = styled.span`
 `;
 
 const StyledRetail = styled(StyledSpan)`
+  padding: 0 5px;
+  font-weight: ${({ sale }) => sale ? 300 : 700};
+  font-size: ${({ sale }) => sale ? fonts.h5 : fonts.h4};
   text-decoration: ${({ sale }) => sale ? 'line-through' : 'none'};
 `;
 
 const StyledSale = styled(StyledSpan)`
+  padding: 0 5px;
+  font-weight: 700;
   color: rgb(${colors.red});
 `;
 

@@ -19,8 +19,9 @@ export const fonts = {
   h1: '30px',
   h2: '28px',
   h3: '24px',
-  h4: '18px',
-  h5: '16px'
+  h4: '20px',
+  h5: '18px',
+  h6: '16px'
 };
 
 export const transitions = {

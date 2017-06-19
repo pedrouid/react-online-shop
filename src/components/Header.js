@@ -10,8 +10,10 @@ const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  max-width: 1200px;
+  padding-bottom: 5px;
   margin: 20px auto;
+  margin-bottom: 10px;
+  max-width: 1200px;
   text-align: center;
 `;
 

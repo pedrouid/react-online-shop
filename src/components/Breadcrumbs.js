@@ -7,7 +7,7 @@ const StyledBreadcrumbs = styled.div`
   width: 100%;
   float: left;
   text-align:left;
-  margin: 30px 0;
+  margin: 0 0 30px;
 `;
 
 const StyledSpan = styled.span`

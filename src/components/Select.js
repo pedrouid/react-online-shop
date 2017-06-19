@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fonts } from '../styles';
+import { fonts, colors } from '../styles';
 import { capitalCase } from '../helpers/utilities';
 
 const StyledSelect = styled.select`
   -webkit-appearance: none;
-  border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 4px;
+  border-style: none;
+  border: none;
+  background: ${({ dark }) => dark ? `rgb(${colors.dark})` : `rgb(${colors.white})`};
+  color: ${({ dark }) => dark ? `rgb(${colors.white})` : `rgb(${colors.dark})`};
   font-size: ${fonts.medium};
-  line-height: 1.2;
-  padding: 5px 0 5px 15px;
+  padding: 5px 15px;
   left: 0;
   text-align: center;
   outline: none;
@@ -23,8 +25,8 @@ const renderOptions = (options, capitalize) =>
     </option>
   ));
 
-const Select = ({ options, emptyOption, capitalize, ...otherProps }) => (
-  <StyledSelect {...otherProps}>
+const Select = ({ dark, options, emptyOption, capitalize, ...otherProps }) => (
+  <StyledSelect dark={dark} {...otherProps}>
     {(emptyOption) && <option disabled selected value>{emptyOption}</option>}
     {renderOptions(options, capitalize)}
   </StyledSelect>
@@ -33,12 +35,14 @@ const Select = ({ options, emptyOption, capitalize, ...otherProps }) => (
 Select.propTypes = {
   options: PropTypes.array.isRequired,
   emptyOption: PropTypes.string,
-  capitalize: PropTypes.bool
+  capitalize: PropTypes.bool,
+  dark: PropTypes.bool
 };
 
 Select.defaultProps = {
   emptyOption: '',
-  capitalize: false
+  capitalize: false,
+  dark: false
 };
 
 export default Select;

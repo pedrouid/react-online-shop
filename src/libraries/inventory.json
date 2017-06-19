@@ -15,6 +15,7 @@
       "productName": "Red Classic Trenchcoat",
       "pathname": "red-classic-trenchcoat",
       "category": "coats",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -24,10 +25,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -38,6 +39,7 @@
       "productName": "Kahki Classic Trenchcoat",
       "pathname": "kahki-classic-trenchcoat",
       "category": "coats",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -47,10 +49,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -61,6 +63,7 @@
       "productName": "White Woods Dress",
       "pathname": "white-woods-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -70,10 +73,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -84,6 +87,7 @@
       "productName": "Navy Dress with Lace Vest",
       "pathname": "navy-dress-with-lace-vest",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -93,10 +97,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -107,6 +111,7 @@
       "productName": "Blue Owl Dress",
       "pathname": "blue-owl-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -116,10 +121,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -130,6 +135,7 @@
       "productName": "Red Forest Dress",
       "pathname": "red-forest-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "27.00",
         "retailValue": "40.00",
@@ -139,10 +145,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -153,6 +159,7 @@
       "productName": "Pretty Cheetah Dress",
       "pathname": "pretty-cheetah-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -162,10 +169,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -176,6 +183,7 @@
       "productName": "Green Courtyard Dress",
       "pathname": "green-courtyard-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -185,10 +193,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -199,6 +207,7 @@
       "productName": "Red Party Dress",
       "pathname": "red-party-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -208,10 +217,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -222,6 +231,7 @@
       "productName": "Black Party Dress",
       "pathname": "black-party-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -231,10 +241,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -245,6 +255,7 @@
       "productName": "White Party Dress",
       "pathname": "white-party-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -254,10 +265,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -268,6 +279,7 @@
       "productName": "Sicilian Floral Dress",
       "pathname": "sicilian-floral-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -277,10 +289,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -291,6 +303,7 @@
       "productName": "Classic Cheetah Dress",
       "pathname": "classic-cheetah-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -300,10 +313,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -314,6 +327,7 @@
       "productName": "Sicilian Shorts & Top",
       "pathname": "sicilian-shorts-and-top",
       "category": "combos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -323,10 +337,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -337,6 +351,7 @@
       "productName": "Classic Burgundy Dress",
       "pathname": "classic-burgundy-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -346,10 +361,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -360,6 +375,7 @@
       "productName": "Green Yard Dress",
       "pathname": "green-yard-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -369,10 +385,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -383,6 +399,7 @@
       "productName": "Pink Vine Dress",
       "pathname": "pink-vine-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -392,10 +409,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -406,6 +423,7 @@
       "productName": "Daisy Skirt & Top",
       "pathname": "daisy-skirt-and-top",
       "category": "combos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -415,10 +433,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -429,6 +447,7 @@
       "productName": "Red Lace Dress",
       "pathname": "red-lace-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -438,10 +457,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -452,6 +471,7 @@
       "productName": "White Lace Dress",
       "pathname": "white-lace-dress",
       "category": "dresses",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "35.00",
         "retailValue": "20.00",
@@ -461,10 +481,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
@@ -475,6 +495,7 @@
       "productName": "Owl Crossbody Bag",
       "pathname": "owl-crossbody-bag",
       "category": "accessories",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
         "saleValue": "20.00",
         "retailValue": "10.00",
@@ -484,10 +505,10 @@
         {
           "name" : "Size",
           "options" : [
-            "110 (2-3 years)",
-            "120 (4-5 years)",
-            "130 (6-7 years)",
-            "140 (8-9 years)"
+            "110",
+            "120",
+            "130",
+            "140"
           ]
         }
       ],
