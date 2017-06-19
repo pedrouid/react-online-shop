@@ -9,9 +9,9 @@ const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
   padding-bottom: 5px;
-  margin: 20px auto;
+  margin: 0 auto;
   margin-bottom: 10px;
   max-width: 1200px;
   text-align: center;

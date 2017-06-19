@@ -9,14 +9,14 @@ const StyledPrice = styled.div`
 `;
 
 const StyledSpan = styled.span`
-  font-size: ${fonts.h4};
+  font-size: ${fonts.large};
   padding: 0 5px;
 `;
 
 const StyledRetail = styled(StyledSpan)`
   padding: 0 5px;
   font-weight: ${({ sale }) => sale ? 300 : 700};
-  font-size: ${({ sale }) => sale ? fonts.h5 : fonts.h4};
+  font-size: ${({ sale }) => sale ? fonts.medium : fonts.large};
   text-decoration: ${({ sale }) => sale ? 'line-through' : 'none'};
 `;
 

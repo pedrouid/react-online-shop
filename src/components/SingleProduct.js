@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Breadcrumbs from './Breadcrumbs';
-import Select from './Select';
-import Price from './Price';
+import Select from '../components/Select';
+import Price from '../components/Price';
+import SizeChart from '../components/SizeChart';
 import { responsive, fonts } from '../styles';
 
 const StyledContainer = styled.div`
@@ -101,6 +102,7 @@ class SingleProduct extends Component {
           <StyledOptions>
             {this.renderVariants(product.variants)}
           </StyledOptions>
+          <SizeChart />
         </StyledInfo>
       </StyledContainer>
     );

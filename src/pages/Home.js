@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Header from '../components/Header';
 import CartView from '../components/CartView';
 import ProductView from '../components/ProductView';
@@ -13,21 +13,23 @@ class Home extends Component {
   render = () => (
     <div>
       <Header changeView={this.changeView} view={this.state.view} />
-      <Route
-        exact
-        path="/"
-        render={props => (
-          <ProductView category={''} />
-        )}
-      />
-      <Route exact path="/cart" component={CartView} />
-      <Route
-        exact
-        path="/:route"
-        render={props => (
-          <ProductView view={this.state.view} />
-        )}
-      />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={props => (
+            <ProductView category={''} />
+          )}
+        />
+        <Route exact path="/cart" component={CartView} />
+        <Route
+          exact
+          path="/:route"
+          render={props => (
+            <ProductView view={this.state.view} />
+          )}
+        />
+      </Switch>
     </div>
   );
 }

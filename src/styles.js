@@ -14,8 +14,8 @@ export const colors = {
 
 export const fonts = {
   small: '12px',
-  medium: '14px',
-  large: '16px',
+  medium: '16px',
+  large: '20px',
   h1: '30px',
   h2: '28px',
   h3: '24px',
