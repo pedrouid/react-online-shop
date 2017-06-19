@@ -7,6 +7,7 @@ import FadeIn from './components/FadeIn';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
+import { setSession } from './helpers/utilities';
 import './libraries/CSSTransitionAnimation.css';
 
 const StyledWrapper = styled(FadeIn)`
@@ -23,6 +24,7 @@ const CSSTransitionConfig = {
 
 class Router extends Component {
   componentDidMount() {
+    setSession();
     window.rogueDispatch = this.context.store.dispatch;
     window.browserHistory = this.context.router.history;
   }

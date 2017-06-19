@@ -1,24 +1,22 @@
 /**
  * @desc create authenticated user session
  * @param  {String} [uid='']
- * @param  {String} [email='']
- * @param  {String} [profile='']
+ * @param  {String} [basket={}]
  * @param  {Date} [expires=Date.now()]
  * @return {Session}
  */
 export const setSession = (
-  uid = '',
-  email = '',
-  displayName = '',
+  uid = generateUID(),
+  basket = {},
   expires = Date.now(),
   ) => {
   const session = {
     uid,
-    email,
-    displayName,
+    basket,
     expires,
   };
   localStorage.setItem('USER_SESSION', JSON.stringify(session));
+  console.log('USER_SESSION', session);
 };
 
 /**
@@ -31,12 +29,12 @@ export const getSession = () => {
 };
 
 /**
- * @desc update profile in session
+ * @desc update basket in session
  * @param  {String}  [profile='']
  * @return {Session}
  */
-export const updateProfile = (profile = '') => {
-  const newSession = { ...getSession(), profile };
+export const updateBasket = (basket = '') => {
+  const newSession = { ...getSession(), basket };
   return localStorage.setItem('USER_SESSION', JSON.stringify(newSession));
 };
 
@@ -46,16 +44,6 @@ export const updateProfile = (profile = '') => {
  */
 export const deleteSession = () => {
   localStorage.removeItem('USER_SESSION');
-};
-
-/**
- * @desc get session status
- * @return {String}
- */
-export const getSessionStatus = () => {
-  const auth = getSession();
-  if (auth && auth.expires > Date.now()) return 'LOGIN';
-  return 'LOGOUT';
 };
 
 /**
@@ -137,3 +125,19 @@ export const getCurrencySymbol = (currency) => {
       return '£';
   }
 };
+
+/**
+ * @desc generate unique id
+ * @return {String}
+ */
+export function generateUID() {
+  // always start with a letter (for DOM friendlyness)
+  let idstr = String.fromCharCode(Math.floor((Math.random() * 25) + 65));
+  do {
+    const ascicode = Math.floor((Math.random() * 42) + 48);
+    if (ascicode < 58 || ascicode > 64) {
+      idstr += String.fromCharCode(ascicode);
+    }
+  } while (idstr.length < 32);
+  return (idstr);
+}

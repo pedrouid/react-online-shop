@@ -1,19 +1,7 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { authenticationLogout } from '../redux/_authentication';
-import { deleteSession } from '../helpers/utilities';
+import React from 'react';
 
-class Logout extends Component {
-  componentWillMount() {
-    this.props.authenticationLogout();
-    deleteSession();
-  }
-  render = () => null;
-}
+const Admin = () => (
+  <div>This is Admin</div>
+);
 
-Logout.propTypes = {
-  authenticationLogout: PropTypes.func.isRequired
-};
-
-export default connect(null, { authenticationLogout })(Logout);
+export default Admin;

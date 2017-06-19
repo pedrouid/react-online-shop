@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Breadcrumbs from './Breadcrumbs';
 import Select from '../components/Select';
 import Price from '../components/Price';
+import AddToCart from '../components/AddToCart';
 import SizeChart from '../components/SizeChart';
 import { responsive, fonts } from '../styles';
 
@@ -103,6 +104,7 @@ class SingleProduct extends Component {
             {this.renderVariants(product.variants)}
           </StyledOptions>
           <SizeChart />
+          <AddToCart />
         </StyledInfo>
       </StyledContainer>
     );
