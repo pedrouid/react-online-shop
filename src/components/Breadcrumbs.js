@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Link from './Link';
+import { capitalize } from '../helpers/utilities';
 
 const StyledBreadcrumbs = styled.div`
   width: 100%;
@@ -25,7 +26,7 @@ const Breadcrumbs = ({ category, pathname, productName }) => (
   <StyledBreadcrumbs>
     <Link to={'/'}><StyledSpan>{'Shop'}</StyledSpan></Link>
     <StyledCaret>{'>'}</StyledCaret>
-    <Link to={`/${category}`}><StyledSpan>{category}</StyledSpan></Link>
+    <Link to={`/${category}`}><StyledSpan>{capitalize(category)}</StyledSpan></Link>
     <StyledCaret>{'>'}</StyledCaret>
     <Link to={`/${pathname}`}><StyledSpan>{productName}</StyledSpan></Link>
   </StyledBreadcrumbs>

@@ -1,18 +1,18 @@
 /**
  * @desc create authenticated user session
  * @param  {String} [uid='']
- * @param  {String} [basket={}]
+ * @param  {String} [cart={}]
  * @param  {Date} [expires=Date.now()]
  * @return {Session}
  */
 export const setSession = (
   uid = generateUID(),
-  basket = {},
-  expires = Date.now(),
+  cart = {},
+  expires = Date.now() + 604800000, // 1 week
   ) => {
   const session = {
     uid,
-    basket,
+    cart,
     expires,
   };
   localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(session));
@@ -29,12 +29,12 @@ export const getSession = () => {
 };
 
 /**
- * @desc update basket in session
- * @param  {String}  [profile='']
+ * @desc update cart in session
+ * @param  {String}  [cart='']
  * @return {Session}
  */
-export const updateBasket = (basket = '') => {
-  const newSession = { ...getSession(), basket };
+export const updateCart = (cart = '') => {
+  const newSession = { ...getSession(), cart };
   return localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(newSession));
 };
 
@@ -104,7 +104,7 @@ export const snakeCase = string =>
  * @param  {String}  [string='']
  * @return {String}
  */
-export const capitalCase = string =>
+export const capitalize = string =>
   string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
 

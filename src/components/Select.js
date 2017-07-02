@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { fonts, colors } from '../styles';
-import { capitalCase } from '../helpers/utilities';
+import { capitalize } from '../helpers/utilities';
 
 const StyledSelect = styled.select`
   -webkit-appearance: none;
@@ -18,30 +18,30 @@ const StyledSelect = styled.select`
   outline: none;
 `;
 
-const renderOptions = (options, capitalize) =>
+const renderOptions = (options, capital) =>
   options.map(option => (
     <option key={option} value={option.toLowerCase()}>
-      {(capitalize) ? capitalCase(option) : option}
+      {(capital) ? capitalize(option) : option}
     </option>
   ));
 
-const Select = ({ dark, options, emptyOption, capitalize, ...otherProps }) => (
+const Select = ({ dark, options, emptyOption, capital, ...otherProps }) => (
   <StyledSelect dark={dark} {...otherProps}>
-    {(emptyOption) && <option disabled selected value>{emptyOption}</option>}
-    {renderOptions(options, capitalize)}
+    {(emptyOption) && <option key="emptyOption" disabled selected value>{emptyOption}</option>}
+    {renderOptions(options, capital)}
   </StyledSelect>
 );
 
 Select.propTypes = {
   options: PropTypes.array.isRequired,
   emptyOption: PropTypes.string,
-  capitalize: PropTypes.bool,
+  capital: PropTypes.bool,
   dark: PropTypes.bool
 };
 
 Select.defaultProps = {
   emptyOption: '',
-  capitalize: false,
+  capital: false,
   dark: false
 };
 

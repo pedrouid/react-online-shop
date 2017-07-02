@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import Breadcrumbs from './Breadcrumbs';
 import Select from '../components/Select';
 import Price from '../components/Price';
+import Quantity from '../components/Quantity';
 import AddToCart from '../components/AddToCart';
-import SizeChart from '../components/SizeChart';
-import { responsive, fonts } from '../styles';
+import { modalShow } from '../redux/_modal';
+import { cartUpdate } from '../redux/_cart';
+import { responsive, fonts, colors } from '../styles';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -32,7 +35,6 @@ const StyledInfo = styled(StyledHalf)`
 
 const StyledImage = styled.img`
   width: 100%;
-  height: 100%;
 `;
 
 const StyledTitle = styled.h1`
@@ -50,10 +52,23 @@ const StyledDescription = styled.p`
 `;
 
 const StyledOptions = styled.div`
-  padding: 0;
+  margin: 10px 0;
+`;
+
+const StyledSizeChart = styled.span`
+  cursor: pointer;
+  color: rgb(${colors.dark});
+  -webkit-appearance: none;
+  background: none;
+  text-align: left;
+  margin-left: 10px;
+  font-size: ${fonts.medium};
 `;
 
 class SingleProduct extends Component {
+  state = {
+    quantity: 1
+  }
   componentDidMount = () => {
     const productVariants = this.getVariants(this.props.product.variants);
     this.setState(productVariants);
@@ -62,16 +77,27 @@ class SingleProduct extends Component {
   onVariantChange = (variant, option) =>
     this.setState({ [variant]: option });
 
+  onQuantityChange = quantity =>
+    this.setState({ quantity });
+
+  onCardAdd = () => {
+    this.props.cartUpdate();
+  }
+
   getVariants = (variants) => {
     const productVariants = {};
     variants.map(variant => productVariants[variant.name] = '');
     return productVariants;
   };
 
+  toggleSizeModal = () => {
+    this.props.modalShow('SIZE_CHART_MODAL');
+  }
+
   renderVariants = variants =>
   variants.map(variant => (
     <div>
-      <StyledVariant>{variant.name}</StyledVariant>
+      <StyledVariant key={`label-${variant.name}`}>{variant.name}</StyledVariant>
       <Select
         required
         key={variant.name}
@@ -79,32 +105,45 @@ class SingleProduct extends Component {
         onChange={({ target }) => this.onVariantChange(variant.name, target.value)}
         options={variant.options}
       />
+      {
+        (variant.name.toLowerCase() === 'size')
+        && <StyledSizeChart onClick={this.toggleSizeModal}>Size Chart</StyledSizeChart>
+      }
     </div>
   ));
 
   render() {
-    const { product } = this.props;
+    const {
+      productName,
+      category,
+      pathname,
+      unitPrice,
+      description,
+      variants,
+      imageUrl
+    } = this.props.product;
     return (
-      <StyledContainer>
+      <StyledContainer key={`product-${productName}`}>
         <Breadcrumbs
-          category={product.category}
-          pathname={product.pathname}
-          productName={product.productName}
+          category={category}
+          pathname={pathname}
+          productName={productName}
         />
         <StyledHalf>
-          <StyledImage src={product.imageUrl} />
+          <StyledImage src={imageUrl} />
         </StyledHalf>
         <StyledInfo>
-          <StyledTitle>{product.productName}</StyledTitle>
-          <Price unitPrice={product.unitPrice} />
+          <StyledTitle>{productName}</StyledTitle>
+          <Price unitPrice={unitPrice} />
           <StyledDescription>
-            {product.description}
+            {description}
           </StyledDescription>
           <StyledOptions>
-            {this.renderVariants(product.variants)}
+            {this.renderVariants(variants)}
           </StyledOptions>
-          <SizeChart />
-          <AddToCart />
+          {}
+          <Quantity onChange={this.onQuantityChange} />
+          <AddToCart onClick={this.onCardAdd} />
         </StyledInfo>
       </StyledContainer>
     );
@@ -112,7 +151,9 @@ class SingleProduct extends Component {
 }
 
 SingleProduct.propTypes = {
-  product: PropTypes.object.isRequired
+  product: PropTypes.object.isRequired,
+  cartUpdate: PropTypes.func.isRequired,
+  modalShow: PropTypes.func.isRequired
 };
 
-export default SingleProduct;
+export default connect(null, { cartUpdate, modalShow })(SingleProduct);

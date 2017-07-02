@@ -501,17 +501,7 @@
         "retailValue": "10.00",
         "currency": "GBP"
       },
-      "variants" : [
-        {
-          "name" : "Size",
-          "options" : [
-            "110",
-            "120",
-            "130",
-            "140"
-          ]
-        }
-      ],
+      "variants" : [],
       "imageUrl" : "http://res.cloudinary.com/gomesphoto/image/upload/v1496584161/owl_crossbag_v0mblf.jpg"
     }
   ]

@@ -16,7 +16,7 @@ class Home extends Component {
           exact
           path="/"
           render={props => (
-            <ProductView category={''} />
+            <ProductView view={''} />
           )}
         />
         <Route exact path="/cart" component={CartView} />

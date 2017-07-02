@@ -5,6 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import { Switch, Route } from 'react-router-dom';
 import FadeIn from './components/FadeIn';
 import Header from './components/Header';
+import Modal from './components/Modal';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
@@ -70,6 +71,7 @@ class Router extends Component {
         />
         <Route component={NotFound} />
       </Switch>
+      <Modal />
     </StyledWrapper>
   );
 }

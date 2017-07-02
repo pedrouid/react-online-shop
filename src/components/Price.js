@@ -16,7 +16,7 @@ const StyledSpan = styled.span`
 const StyledRetail = styled(StyledSpan)`
   padding: 0 5px;
   font-weight: ${({ sale }) => sale ? '300' : '700'};
-  font-size: ${({ sale }) => sale ? '100%' : '120%'};
+  font-size: ${({ sale, fontSize }) => sale ? 'initial' : fonts[fontSize]};
   text-decoration: ${({ sale }) => sale ? 'line-through' : 'none'};
 `;
 
@@ -46,7 +46,7 @@ Price.propTypes = {
 };
 
 Price.defaultProps = {
-  fontSize: 'large'
+  fontSize: 'h3'
 };
 
 export default Price;
