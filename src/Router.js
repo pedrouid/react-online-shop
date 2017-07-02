@@ -19,6 +19,7 @@ const StyledWrapper = styled(FadeIn)`
 
 const CSSTransitionConfig = {
   transitionName: 'fade',
+  className: 'transitionContainer',
   transitionEnterTimeout: 300,
   transitionLeaveTimeout: 300
 };

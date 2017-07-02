@@ -1,3 +1,11 @@
+.transitionContainer {
+  position: relative;
+  display: block;
+}
+.transitionContainer > div {
+  position: absolute;
+}
+
 .fade-enter {
   opacity: 0;
 }

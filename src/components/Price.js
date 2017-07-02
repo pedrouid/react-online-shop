@@ -9,14 +9,14 @@ const StyledPrice = styled.div`
 `;
 
 const StyledSpan = styled.span`
-  font-size: ${fonts.large};
+  font-size: ${({ fontSize }) => fontSize ? fonts[fontSize] : fonts.large};
   padding: 0 5px;
 `;
 
 const StyledRetail = styled(StyledSpan)`
   padding: 0 5px;
-  font-weight: ${({ sale }) => sale ? 300 : 700};
-  font-size: ${({ sale }) => sale ? fonts.medium : fonts.large};
+  font-weight: ${({ sale }) => sale ? '300' : '700'};
+  font-size: ${({ sale }) => sale ? '100%' : '120%'};
   text-decoration: ${({ sale }) => sale ? 'line-through' : 'none'};
 `;
 
@@ -26,22 +26,27 @@ const StyledSale = styled(StyledSpan)`
   color: rgb(${colors.red});
 `;
 
-const Price = ({ unitPrice, ...otherProps }) => (
+const Price = ({ unitPrice, fontSize, ...otherProps }) => (
   <StyledPrice {...otherProps}>
     {(unitPrice.saleValue)
       ? <div>
-        <StyledSale>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.saleValue}`}</StyledSale>
-        <StyledRetail sale>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.retailValue}`}</StyledRetail>
+        <StyledSale fontSize={fontSize}>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.saleValue}`}</StyledSale>
+        <StyledRetail sale fontSize={fontSize}>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.retailValue}`}</StyledRetail>
       </div>
       : <div>
-        <StyledRetail>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.retailValue}`}</StyledRetail>
+        <StyledRetail fontSize={fontSize}>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.retailValue}`}</StyledRetail>
       </div>
     }
   </StyledPrice>
 );
 
 Price.propTypes = {
-  unitPrice: PropTypes.object.isRequired
+  unitPrice: PropTypes.object.isRequired,
+  fontSize: PropTypes.string,
+};
+
+Price.defaultProps = {
+  fontSize: 'large'
 };
 
 export default Price;

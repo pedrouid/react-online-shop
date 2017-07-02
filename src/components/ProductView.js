@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Inventory from '../libraries/inventory.json';
 import SingleProduct from './SingleProduct';
+import Price from '../components/Price';
 import Link from './Link';
 import { transitions, colors, responsive } from '../styles';
 
@@ -82,16 +83,7 @@ const StyledWrapper = styled.div`
 
 const StyledName = styled.div`
   width: 100%;
-`;
-
-const StyledSale = styled.span`
-  margin: 5px;
-`;
-
-const StyledPrice = styled.span`
-  text-decoration: line-through;
-  margin: 5px;
-  color: rgb(${colors.red});
+  font-weight: 700;
 `;
 
 const displayProducts = products =>
@@ -102,8 +94,7 @@ const displayProducts = products =>
           <StyledOverlay>
             <StyledWrapper>
               <StyledName>{product.productName}</StyledName>
-              <StyledPrice>£{product.unitPrice.retailValue}</StyledPrice>
-              <StyledSale>£{product.unitPrice.saleValue}</StyledSale>
+              <Price unitPrice={product.unitPrice} fontSize={'small'} />
             </StyledWrapper>
           </StyledOverlay>
         </StyledProduct>
