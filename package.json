@@ -1,7 +1,8 @@
 {
-  "name": "gabbana-shop",
+  "name": "react-online-shop",
   "version": "0.1.0",
   "private": true,
+  "description": "Small Online Boutique Shop",
   "dependencies": {
     "axios": "^0.16.1",
     "husky": "^0.13.3",
