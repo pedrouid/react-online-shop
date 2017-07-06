@@ -62,7 +62,6 @@ const StyledSizeChart = styled.span`
   background: none;
   text-align: left;
   margin-left: 10px;
-  font-size: ${fonts.medium};
 `;
 
 class SingleProduct extends Component {
@@ -80,13 +79,13 @@ class SingleProduct extends Component {
   onQuantityChange = quantity =>
     this.setState({ quantity });
 
-  onCardAdd = () => {
-    this.props.cartUpdate();
+  onCartAdd = () => {
+    this.props.cartUpdate(this.props.product, this.state);
   }
 
   getVariants = (variants) => {
     const productVariants = {};
-    variants.map(variant => productVariants[variant.name] = '');
+    variants.map(variant => productVariants[variant.name] = variant.options[0]);
     return productVariants;
   };
 
@@ -96,8 +95,8 @@ class SingleProduct extends Component {
 
   renderVariants = variants =>
   variants.map(variant => (
-    <div>
-      <StyledVariant key={`label-${variant.name}`}>{variant.name}</StyledVariant>
+    <div key={`label-${variant.name}`}>
+      <StyledVariant>{variant.name}</StyledVariant>
       <Select
         required
         key={variant.name}
@@ -141,9 +140,8 @@ class SingleProduct extends Component {
           <StyledOptions>
             {this.renderVariants(variants)}
           </StyledOptions>
-          {}
           <Quantity onChange={this.onQuantityChange} />
-          <AddToCart onClick={this.onCardAdd} />
+          <AddToCart onClick={this.onCartAdd} />
         </StyledInfo>
       </StyledContainer>
     );

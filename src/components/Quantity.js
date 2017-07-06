@@ -10,7 +10,7 @@ const StyledQuantityLabel = styled.span`
 `;
 
 const StyledQuantityInput = styled.input`
-  width: 15%;
+  width: 40px;
   outline: none;
   border: none;
   text-align: center;
@@ -25,21 +25,29 @@ class Quantity extends Component {
     quantity: 1
   }
   _onChange = ({ target }) => {
-    this.setState({ quantity: target.value });
-    this.props.onChange(target.value);
+    let val = Number(target.value);
+    if (val < 1) val = 1;
+    if (val > 99) val = 99;
+    this.setState({ quantity: val });
+    this.props.onChange(val);
   }
   render() {
     return (
       <div>
         <StyledQuantityLabel>Quantity</StyledQuantityLabel>
-        <StyledQuantityInput type="number" min="1" max="99" value={this.state.quantity} onChange={this._onChange} />
+        <StyledQuantityInput type="number" min="1" max={this.props.max} value={this.state.quantity} onChange={this._onChange} />
       </div>
     );
   }
 }
 
 Quantity.propTypes = {
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  max: PropTypes.number
+};
+
+Quantity.defaultProps = {
+  max: 99
 };
 
 export default Quantity;

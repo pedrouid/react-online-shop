@@ -23,7 +23,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -47,7 +47,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -71,7 +71,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -95,7 +95,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -119,7 +119,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -143,7 +143,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -167,7 +167,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -191,7 +191,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -215,7 +215,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -239,7 +239,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -263,7 +263,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -287,7 +287,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -311,7 +311,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -335,7 +335,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -359,7 +359,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -383,7 +383,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -407,7 +407,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -431,7 +431,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -455,7 +455,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",
@@ -479,7 +479,7 @@
       },
       "variants" : [
         {
-          "name" : "Size",
+          "name" : "size",
           "options" : [
             "110",
             "120",

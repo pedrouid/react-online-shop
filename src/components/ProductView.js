@@ -5,7 +5,7 @@ import Inventory from '../libraries/inventory.json';
 import SingleProduct from './SingleProduct';
 import Price from '../components/Price';
 import Link from './Link';
-import { transitions, colors, responsive } from '../styles';
+import { transitions, colors, responsive, fonts } from '../styles';
 
 const StyledContainer = styled.div`
   display: flex;
@@ -83,7 +83,8 @@ const StyledWrapper = styled.div`
 
 const StyledName = styled.div`
   width: 100%;
-  font-weight: 700;
+  font-size: ${fonts.medium};
+  font-weight: 400;
 `;
 
 const displayProducts = products =>

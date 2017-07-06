@@ -17,7 +17,8 @@ const StyledButton = styled.button`
   }
 `;
 
-const AddToCart = () => (
-  <StyledButton>Add to Cart</StyledButton>
+const AddToCart = props => (
+  <StyledButton {...props}>Add to Cart</StyledButton>
 );
+
 export default AddToCart;

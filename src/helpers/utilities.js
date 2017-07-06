@@ -16,7 +16,6 @@ export const setSession = (
     expires,
   };
   localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(session));
-  console.log('CUSTOMER_SESSION', session);
 };
 
 /**
@@ -30,10 +29,14 @@ export const getSession = () => {
 
 /**
  * @desc update cart in session
- * @param  {String}  [cart='']
+ * @param  {String}  [cart]
  * @return {Session}
  */
-export const updateCart = (cart = '') => {
+export const updateCart = (cart) => {
+  if (!Object.keys(cart).length) {
+    console.error("updateCart cart argument can't be empty");
+    return null;
+  }
   const newSession = { ...getSession(), cart };
   return localStorage.setItem('CUSTOMER_SESSION', JSON.stringify(newSession));
 };
