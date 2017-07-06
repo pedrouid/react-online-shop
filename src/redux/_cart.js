@@ -17,6 +17,8 @@ export const cartUpdate = (product, option) =>
   (dispatch) => {
     const prevCart = getSession().cart;
     let payload = null;
+    const prevQuantity = prevCart.totalQuantity ? prevCart.totalQuantity : 0;
+    const totalQuantity = prevQuantity + option.quantity;
     if (prevCart[product.sku]) {
       let isNewOption = true;
       const prevOptions = prevCart[product.sku].options;
@@ -36,11 +38,13 @@ export const cartUpdate = (product, option) =>
       };
       payload = {
         ...prevCart,
+        totalQuantity,
         [product.sku]: updatedProduct
       };
     } else {
       payload = {
         ...prevCart,
+        totalQuantity,
         [product.sku]: {
           name: product.name,
           unitPrice: product.unitPrice,

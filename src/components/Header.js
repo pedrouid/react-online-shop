@@ -1,17 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import CartIcon from '../components/CartIcon';
 import Link from '../components/Link';
-import cartIcon from '../assets/cart.svg';
 import logo from '../assets/logo.png';
-import { colors, transitions } from '../styles';
-
-const pop = keyframes`
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
-`;
 
 const StyledHeader = styled.div`
   display: flex;
@@ -48,46 +41,6 @@ const StyledMenuItem = styled.li`
   }
 `;
 
-const StyledCartWrapper = styled.div`
-  position: relative;
-  transition: ${transitions.base};
-  width: auto;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.7;
-  }
-`;
-
-const StyledCart = styled.img`
-  width: 30px;
-`;
-
-const StyledCartSize = styled.div`
-  border-radius: 50%;
-  background: rgb(${colors.dark});
-  position: absolute;
-  color: rgb(${colors.white});
-  cursor: pointer;
-  padding: 5px;
-  width: 20px;
-  top: 12px;
-  right: -12px;
-  font-weight: 700;
-  font-size: 10px;
-  animation: ${pop} 0.5s ease-in-out;
-`;
-
-const checkCartSize = (cart) => {
-  let total = 0;
-  if (cart.length) return total;
-  Object.keys(cart).map((sku) => {
-    const quantity = Number(cart[sku].quantity);
-    if (quantity) total += quantity;
-    return null;
-  });
-  return total;
-};
-
 const Header = ({ view, cart, ...otherProps }) => (
   <StyledHeader {...otherProps}>
     <Link to="/">
@@ -108,10 +61,7 @@ const Header = ({ view, cart, ...otherProps }) => (
       </Link>
     </StyledMenu>
     <Link to="/cart">
-      <StyledCartWrapper>
-        <StyledCart active={view.toLowerCase() === 'cart'} src={cartIcon} alt="Cart" />
-        {(!!checkCartSize(cart)) && (<StyledCartSize>{checkCartSize(cart)}</StyledCartSize>)}
-      </StyledCartWrapper>
+      <CartIcon active={view.toLowerCase() === 'cart'} quantity={cart.totalQuantity} />
     </Link>
   </StyledHeader>
 );
