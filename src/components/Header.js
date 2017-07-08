@@ -47,6 +47,9 @@ const Header = ({ view, cart, ...otherProps }) => (
       <StyledLogo src={logo} alt="App Logo" />
     </Link>
     <StyledMenu>
+      <Link to={'/all'}>
+        <StyledMenuItem active={view.toLowerCase() === 'all'}>All</StyledMenuItem>
+      </Link>
       <Link to={'/coats'}>
         <StyledMenuItem active={view.toLowerCase() === 'coats'}>Coats</StyledMenuItem>
       </Link>

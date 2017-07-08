@@ -102,9 +102,9 @@ class ProductList extends Component {
   componentWillReceiveProps({ view }) {
     this.setState({ products: this.filterProducts(view) });
   }
-  filterProducts(category) {
-    if (!category) return Inventory.products;
-    const products = Inventory.products.filter(x => x.category === category);
+  filterProducts(view) {
+    if (view === 'all' || !view) return Inventory.products;
+    const products = Inventory.products.filter(x => x.category === view);
     return products;
   }
   render() {

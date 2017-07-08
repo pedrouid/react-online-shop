@@ -9,7 +9,7 @@ const getProduct = pathname =>
 
 const Products = ({ view }) => (
   <div>
-    {(Inventory.categories.indexOf(view) === -1 && view)
+    {(Inventory.categories.indexOf(view) === -1 && !view)
     ? <ProductSingle product={getProduct(view)} />
     : <ProductList view={view} />}
   </div>
