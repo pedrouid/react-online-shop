@@ -9,6 +9,36 @@
     "combos",
     "accessories"
   ],
+  "shipping" : [
+    {
+      "type": "UK Standard",
+      "price": {
+        "value": "2.95",
+        "currency": "GBP"
+      }
+    },
+    {
+      "type": "UK Express",
+      "price": {
+        "value": "5.95",
+        "currency": "GBP"
+      }
+    },
+    {
+      "type": "Europe",
+      "price": {
+        "value": "7.95",
+        "currency": "GBP"
+      }
+    },
+    {
+      "type": "International",
+      "price": {
+        "value": "11.95",
+        "currency": "GBP"
+      }
+    }
+  ],
   "products" :
   [
     {
