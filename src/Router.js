@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { CSSTransitionGroup } from 'react-transition-group';
 import { Switch, Route } from 'react-router-dom';
 import FadeIn from './components/FadeIn';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Home from './pages/Home';
-import Admin from './pages/Admin';
+import Cart from './pages/Cart';
+import Products from './pages/Products';
 import NotFound from './pages/NotFound';
 import { setSession, getSession } from './helpers/utilities';
 import './libraries/CSSTransitionAnimation.css';
-
-const StyledWrapper = styled(FadeIn)`
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-`;
 
 const CSSTransitionConfig = {
   transitionName: 'fade',
@@ -26,29 +20,47 @@ const CSSTransitionConfig = {
 };
 
 class Router extends Component {
+  state = {
+    view: this.context.router.route.location.pathname.slice(1)
+  }
   componentDidMount() {
     if (!getSession()) {
       console.log(getSession());
       setSession();
     }
-    window.rogueDispatch = this.context.store.dispatch;
-    window.browserHistory = this.context.router.history;
+  }
+  componentWillReceiveProps(nextProps, nextContext) {
+    this.setState({ view: nextContext.router.route.location.pathname.slice(1) });
   }
   render = () => (
-    <StyledWrapper>
+    <FadeIn>
+      <Header view={this.state.view} />
       <Switch>
-        <Route exact path="/admin" component={Admin} />
         <Route
           exact
           path="/"
           render={({ location }) => (
             <div>
-              <Header view={location.pathname} />
               <CSSTransitionGroup {...CSSTransitionConfig}>
                 <Route
                   location={location}
                   key={location.key}
-                  component={Home}
+                  render={() => <Home view={this.state.view} />}
+                />
+              </CSSTransitionGroup>
+            </div>
+            )}
+        />
+        <Route
+          exact
+          path="/cart"
+          render={({ location }) => (
+            <div>
+              <CSSTransitionGroup {...CSSTransitionConfig}>
+                <Route
+                  location={location}
+                  key={location.key}
+                  render={() => <Cart view={this.state.view} />}
                 />
               </CSSTransitionGroup>
             </div>
@@ -59,27 +71,37 @@ class Router extends Component {
           path="/:route"
           render={({ location }) => (
             <div>
-              <Header view={location.pathname} />
               <CSSTransitionGroup {...CSSTransitionConfig}>
                 <Route
                   location={location}
                   key={location.key}
-                  component={Home}
+                  render={() => <Products view={this.state.view} />}
                 />
               </CSSTransitionGroup>
             </div>
             )}
         />
-        <Route component={NotFound} />
+        <Route
+          render={({ location }) => (
+            <div>
+              <CSSTransitionGroup {...CSSTransitionConfig}>
+                <Route
+                  location={location}
+                  key={location.key}
+                  render={() => <NotFound view={this.state.view} />}
+                />
+              </CSSTransitionGroup>
+            </div>
+            )}
+        />
       </Switch>
       <Modal />
-    </StyledWrapper>
+    </FadeIn>
   );
 }
 
 Router.contextTypes = {
-  router: PropTypes.object.isRequired,
-  store: PropTypes.object.isRequired
+  router: PropTypes.object.isRequired
 };
 
 export default Router;

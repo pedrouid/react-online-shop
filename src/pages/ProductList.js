@@ -2,19 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Inventory from '../libraries/inventory.json';
-import SingleProduct from './SingleProduct';
+import Wrapper from '../components/Wrapper';
 import Price from '../components/Price';
-import Link from './Link';
+import Link from '../components/Link';
 import { transitions, colors, responsive, fonts } from '../styles';
-
-const StyledContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
-`;
 
 const StyledCard = styled.div`
   padding: 2%;
@@ -46,6 +37,7 @@ const StyledProduct = styled.div`
   height: 100%;
   position: relative;
   cursor: pointer;
+  text-align: center;
   box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.15);
   & > div {
     transition: ${transitions.base};
@@ -103,15 +95,13 @@ const displayProducts = products =>
     </StyledCard>
   ));
 
-class ProductView extends Component {
+class ProductList extends Component {
   state = {
     products: this.filterProducts(this.props.view)
   }
   componentWillReceiveProps({ view }) {
     this.setState({ products: this.filterProducts(view) });
   }
-  getProduct = pathname =>
-    Inventory.products.filter(product => product.pathname === pathname)[0];
   filterProducts(category) {
     if (!category) return Inventory.products;
     const products = Inventory.products.filter(x => x.category === category);
@@ -119,17 +109,15 @@ class ProductView extends Component {
   }
   render() {
     return (
-      <StyledContainer>
-        {(Inventory.categories.indexOf(this.props.view) === -1 && this.props.view)
-        ? <SingleProduct product={this.getProduct(this.props.view)} />
-        : displayProducts(this.state.products)}
-      </StyledContainer>
+      <Wrapper>
+        {displayProducts(this.state.products)}
+      </Wrapper>
     );
   }
 }
 
-ProductView.propTypes = {
+ProductList.propTypes = {
   view: PropTypes.string.isRequired
 };
 
-export default ProductView;
+export default ProductList;

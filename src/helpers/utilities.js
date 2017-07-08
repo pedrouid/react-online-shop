@@ -95,7 +95,7 @@ export const isMobile = () => {
 
 
 /**
- * @desc converts titles to snakeCase for pathnames
+ * @desc snakeCase strings
  * @param  {String}  [string='']
  * @return {String}
  */
@@ -110,6 +110,20 @@ export const snakeCase = string =>
 export const capitalize = string =>
   string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
+/**
+ * @desc  titleCase strings
+ * @param  {String}  [string='']
+ * @return {String}
+ */
+export const titleCase = (string) => {
+  console.log(string);
+  const words = string.toLowerCase()
+  .replace('and', '&')
+  .replace('-', /\s/g)
+  .split(' ')
+  .map(word => capitalize(word));
+  return words.join(' ');
+};
 
 /**
  * @desc returns currency symbol

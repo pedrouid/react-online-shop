@@ -12,16 +12,18 @@ const fadeIn = keyframes`
   }
 `;
 
-const StyledWrapper = styled.div`
+const StyledFadeIn = styled.div`
+  height: 100vh;
+  width: 100vw;
   transition: ${transitions.base};
   will-change: transform, opacity;
   animation: 0.5s ease 0s normal 1 ${fadeIn};
 `;
 
 const FadeIn = ({ children, ...otherProps }) => (
-  <StyledWrapper {...otherProps}>
+  <StyledFadeIn {...otherProps}>
     {children}
-  </StyledWrapper>
+  </StyledFadeIn>
 );
 
 FadeIn.propTypes = {

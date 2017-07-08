@@ -54,7 +54,6 @@ export const cartUpdate = (product, option) =>
         }
       };
     }
-    console.log(payload);
     updateCart(payload);
     dispatch({
       type: CART_UPDATE,
@@ -64,7 +63,6 @@ export const cartUpdate = (product, option) =>
 
 export const cartRemove = () =>
   (dispatch) => {
-    console.log(getSession().cart);
     dispatch({ type: CART_REMOVE });
   };
 
