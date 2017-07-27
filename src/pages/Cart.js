@@ -51,15 +51,18 @@ const StyledImg = styled.img`
 `;
 
 const StyledLeft = styled.div`
-  width: 75%;
+  width: 65%;
+  padding: 10px;
 `;
 
 const StyledRight = styled.div`
-  width: 25%;
+  width: 35%;
+  padding: 20px 10px;
 `;
 
 const StyledInline = styled.div`
   display: inline;
+  padding: 10px 25px;
 `;
 
 const StyledFlex = styled.div`
