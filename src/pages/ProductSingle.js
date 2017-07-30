@@ -57,6 +57,7 @@ const StyledSizeChart = styled.span`
 class ProductSingle extends Component {
   state = {
     quantity: 1
+    // variant options will be populated here
   }
   componentDidMount = () => {
     if (Object.keys(this.props.product).length) {

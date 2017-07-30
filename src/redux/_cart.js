@@ -1,4 +1,4 @@
-import { getSession, updateCart } from '../helpers/utilities';
+import { getSession, updateCart, getCurrentPrice } from '../helpers/utilities';
 
 // -- Constants ------------------------------------------------------------- //
 const CART_CLEAR = 'cart/CART_CLEAR';
@@ -15,13 +15,24 @@ export const cartClear = () =>
 
 export const cartUpdate = (product, option) =>
   (dispatch) => {
-    const prevCart = getSession().cart;
     let payload = null;
+
+    // get previous cart from localStorage
+    const prevCart = getSession().cart;
+
+    // update Cart total quantity
     const prevQuantity = prevCart.totalQuantity ? prevCart.totalQuantity : 0;
     const totalQuantity = prevQuantity + option.quantity;
+
+    // update Cart subtotal value
+    const prevSubtotal = prevCart.subtotal ? prevCart.subtotal : 0;
+    const subtotal = prevSubtotal + getCurrentPrice(product.unitPrice) * option.quantity;
+
+    // check prevCart contains the same product
     if (prevCart[product.sku]) {
       let isNewOption = true;
       const prevOptions = prevCart[product.sku].options;
+      // updates options if already populated
       let newOptions = prevOptions.map((prev) => {
         if (prev.size === option.size) {
           isNewOption = false;
@@ -29,22 +40,28 @@ export const cartUpdate = (product, option) =>
         }
         return prev;
       });
+      // updates with new option
       if (isNewOption) {
         newOptions = [...newOptions, option];
       }
+      // updates existant product
       const updatedProduct = {
         ...prevCart[product.sku],
         options: newOptions
       };
+      // updates cart with updatedProduct
       payload = {
         ...prevCart,
         totalQuantity,
+        subtotal,
         [product.sku]: updatedProduct
       };
     } else {
+      // adds new product to cart
       payload = {
         ...prevCart,
         totalQuantity,
+        subtotal,
         [product.sku]: {
           name: product.name,
           unitPrice: product.unitPrice,
@@ -54,7 +71,12 @@ export const cartUpdate = (product, option) =>
         }
       };
     }
+
+    // updates localStorage with updatedCart
     updateCart(payload);
+    console.log('payload', payload);
+
+    // updates redux store with updatedCart
     dispatch({
       type: CART_UPDATE,
       payload

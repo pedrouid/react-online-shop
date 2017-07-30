@@ -144,11 +144,45 @@ export const getCurrencySymbol = (currency) => {
 };
 
 /**
+ * @desc returns current unit price
+ * @param {Object} unitPrice
+ * @return {Number}
+ */
+export const getCurrentPrice = (unitPrice) => {
+  if (!unitPrice) return null;
+  if (unitPrice.saleValue) {
+    return Number(unitPrice.saleValue);
+  }
+  return Number(unitPrice.retailValue);
+};
+
+/**
+ * @desc Convert money string into integer
+ * @param  {String} [string='']
+ * @return {Number}
+ */
+export const convertMoneyStringToInt = (string = '') => {
+  const value = typeof string === 'string' ? Number(string.replace(/[^0-9.-]+/g, '')) : string.toFixed(2);
+  return Number(value);
+};
+
+/**
+ * @desc Convert integer to money string
+ * @param  {Number} [int=0]
+ * @return {String}
+ */
+export const convertIntToMoneyString = (int = 0, prefix = '£') => {
+  const value = typeof int === 'string' ? Number(int.replace(/[^0-9.-]+/g, '')) : int.toFixed(2);
+  const string = `${prefix} ${value}`;
+  return string;
+};
+
+
+/**
  * @desc generate unique id
  * @return {String}
  */
 export function generateUID() {
-  // always start with a letter (for DOM friendlyness)
   let idstr = String.fromCharCode(Math.floor((Math.random() * 25) + 65));
   do {
     const ascicode = Math.floor((Math.random() * 42) + 48);

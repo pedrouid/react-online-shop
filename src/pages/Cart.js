@@ -6,7 +6,7 @@ import Select from '../components/Select';
 import Link from '../components/Link';
 import Wrapper from '../components/Wrapper';
 import Inventory from '../libraries/inventory.json';
-import { getCurrencySymbol } from '../helpers/utilities';
+import { getCurrencySymbol, convertMoneyStringToInt, convertIntToMoneyString } from '../helpers/utilities';
 import { cartClear, cartRemove, cartUpdate } from '../redux/_cart';
 import { colors } from '../styles';
 
@@ -76,22 +76,41 @@ const getPrice = (unitPrice) => {
   return `${getCurrencySymbol(unitPrice.currency)} ${unitPrice.retailValue}`;
 };
 
-const getSubTotal = (quantity, unitPrice) => {
+const getUnitSubtotal = (quantity, unitPrice) => {
   if (unitPrice.saleValue) {
-    return `${getCurrencySymbol(unitPrice.currency)} ${(quantity * unitPrice.saleValue).toFixed(2)}`;
+    return convertIntToMoneyString(
+      quantity * unitPrice.saleValue,
+      getCurrencySymbol(unitPrice.currency)
+    );
   }
-  return `${getCurrencySymbol(unitPrice.currency)} ${(quantity * unitPrice.retailValue).toFixed(2)}`;
+  return convertIntToMoneyString(
+    quantity * unitPrice.retailValue,
+    getCurrencySymbol(unitPrice.currency)
+  );
+};
+
+const getTotal = (cart, shippingAmount) => {
+  console.log('cart', cart);
+  if (cart.subtotal && shippingAmount) {
+    const subtotal = convertMoneyStringToInt(cart.subtotal);
+    console.log('subtotal', subtotal);
+    const shipping = convertMoneyStringToInt(shippingAmount);
+    console.log('shipping', shipping);
+    console.log('SUM', subtotal + shipping);
+    return convertIntToMoneyString(subtotal + shipping);
+  }
+  return null;
 };
 
 const getShippingPrice = (shipping) => {
   const price = Inventory.shipping
   .filter(x => x.type.toLowerCase() === shipping.toLowerCase())[0].price;
-  return `${getCurrencySymbol(price.currency)} ${price.value}`;
+  return convertIntToMoneyString(price.value, getCurrencySymbol(price.currency));
 };
 
 const renderCart = cart =>
   Object.keys(cart).map((key) => {
-    if (key === 'totalQuantity') return null;
+    if (key === 'totalQuantity' || key === 'subtotal') return null;
     return cart[key].options.map(option => (
       <StyledRow key={`${key}-${option.size}`}>
         <StyledColumn>
@@ -110,7 +129,7 @@ const renderCart = cart =>
           {option.quantity}
         </StyledColumn>
         <StyledColumn>
-          {getSubTotal(option.quantity, cart[key].unitPrice)}
+          {getUnitSubtotal(option.quantity, cart[key].unitPrice)}
         </StyledColumn>
       </StyledRow>
     ));
@@ -119,8 +138,14 @@ const renderCart = cart =>
 class Cart extends Component {
   state = {
     cart: this.props.cart,
-    shipping: 'UK Standard'
+    shippingSelected: 'UK Standard',
+    shippingAmount: getShippingPrice('UK Standard')
   }
+  setShipping = ({ target }) =>
+    this.setState({
+      shippingSelected: target.value,
+      shippingAmount: getShippingPrice(target.value)
+    });
   render = () => (
     <div>
       <Wrapper>
@@ -139,22 +164,22 @@ class Cart extends Component {
           <StyledLeft>
             <p>Shipping Options</p>
             <Select
-              onChange={({ target }) => this.setState({ shipping: target.value })}
+              onChange={this.setShipping}
               options={Inventory.shipping.map(x => x.type)}
             />
           </StyledLeft>
           <StyledRight>
             <StyledFlex>
               <StyledInline>Subtotal</StyledInline>
-              <StyledInline>TEST</StyledInline>
+              <StyledInline>{convertIntToMoneyString(this.state.cart.subtotal)}</StyledInline>
             </StyledFlex>
             <StyledFlex>
               <StyledInline>Shipping</StyledInline>
-              <StyledInline>{getShippingPrice(this.state.shipping)}</StyledInline>
+              <StyledInline>{convertIntToMoneyString(this.state.shippingAmount)}</StyledInline>
             </StyledFlex>
             <StyledFlex>
               <StyledInline>Total</StyledInline>
-              <StyledInline>TEST</StyledInline>
+              <StyledInline>{getTotal(this.state.cart, this.state.shippingAmount)}</StyledInline>
             </StyledFlex>
           </StyledRight>
         </StyledGrid>
