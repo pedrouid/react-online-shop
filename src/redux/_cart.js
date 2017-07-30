@@ -63,7 +63,7 @@ export const cartUpdate = (product, option) =>
         totalQuantity,
         subtotal,
         [product.sku]: {
-          name: product.name,
+          name: product.productName,
           unitPrice: product.unitPrice,
           imageUrl: product.imageUrl,
           pathname: product.pathname,

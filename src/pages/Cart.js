@@ -8,10 +8,17 @@ import Wrapper from '../components/Wrapper';
 import Inventory from '../libraries/inventory.json';
 import { getCurrencySymbol, convertMoneyStringToInt, convertIntToMoneyString } from '../helpers/utilities';
 import { cartClear, cartRemove, cartUpdate } from '../redux/_cart';
-import { colors } from '../styles';
+import { colors, fonts } from '../styles';
 
 const StyledHeader = styled.h1`
   font-weight: 700;
+`;
+
+const StyledEmpty = styled.div`
+  font-size: ${fonts.large};
+  text-align: center;
+  padding: 60px 20px;
+  opacity: 0.7;
 `;
 
 const StyledGrid = styled.div`
@@ -115,8 +122,8 @@ const renderCart = cart =>
           </Link>
         </StyledColumn>
         <StyledColumn>
-          <Link to={`${cart[key].pathname}`}><p>{cart[key].pathname}</p></Link>
-          <p>{option.size}</p>
+          <Link to={`${cart[key].pathname}`}><p>{cart[key].name}</p></Link>
+          {(option.size) && <p>{`Size ${option.size}`}</p>}
         </StyledColumn>
         <StyledColumn>
           {getPrice(cart[key].unitPrice)}
@@ -142,47 +149,58 @@ class Cart extends Component {
       shippingSelected: target.value,
       shippingAmount: getShippingPrice(target.value)
     });
-  render = () => (
-    <div>
-      <Wrapper>
-        <StyledHeader>Shopping Cart</StyledHeader>
-        <StyledGrid>
-          <StyledRow key={'cartHeader'}>
-            <StyledColumn>{' '}</StyledColumn>
-            <StyledColumn>Item</StyledColumn>
-            <StyledColumn>Unit Price</StyledColumn>
-            <StyledColumn>Quantity</StyledColumn>
-            <StyledColumn>Price</StyledColumn>
-          </StyledRow>
-          {renderCart(this.state.cart)}
-        </StyledGrid>
-        <StyledGrid>
-          <StyledLeft>
-            <p>Shipping Options</p>
-            <Select
-              value={this.state.shippingSelected}
-              onChange={this.setShipping}
-              options={Inventory.shipping.map(x => x.type)}
-            />
-          </StyledLeft>
-          <StyledRight>
-            <StyledFlex>
-              <StyledInline>Subtotal</StyledInline>
-              <StyledInline>{convertIntToMoneyString(this.state.cart.subtotal)}</StyledInline>
-            </StyledFlex>
-            <StyledFlex>
-              <StyledInline>Shipping</StyledInline>
-              <StyledInline>{convertIntToMoneyString(this.state.shippingAmount)}</StyledInline>
-            </StyledFlex>
-            <StyledFlex>
-              <StyledInline>Total</StyledInline>
-              <StyledInline>{getTotal(this.state.cart, this.state.shippingAmount)}</StyledInline>
-            </StyledFlex>
-          </StyledRight>
-        </StyledGrid>
-      </Wrapper>
-    </div>
-  )
+  render = () => {
+    if (!this.props.cart || Object.keys(this.props.cart).length === 0) {
+      return (
+        <div>
+          <Wrapper>
+            <StyledHeader>Shopping Cart</StyledHeader>
+            <StyledEmpty>You have no items in your cart</StyledEmpty>
+          </Wrapper>
+        </div>
+      );
+    }
+    return (
+      <div>
+        <Wrapper>
+          <StyledHeader>Shopping Cart</StyledHeader>
+          <StyledGrid>
+            <StyledRow key={'cartHeader'}>
+              <StyledColumn>{' '}</StyledColumn>
+              <StyledColumn>Item</StyledColumn>
+              <StyledColumn>Unit Price</StyledColumn>
+              <StyledColumn>Quantity</StyledColumn>
+              <StyledColumn>Price</StyledColumn>
+            </StyledRow>
+            {renderCart(this.state.cart)}
+          </StyledGrid>
+          <StyledGrid>
+            <StyledLeft>
+              <p>Shipping Options</p>
+              <Select
+                onChange={this.setShipping}
+                options={Inventory.shipping.map(x => x.type)}
+              />
+            </StyledLeft>
+            <StyledRight>
+              <StyledFlex>
+                <StyledInline>Subtotal</StyledInline>
+                <StyledInline>{convertIntToMoneyString(this.state.cart.subtotal)}</StyledInline>
+              </StyledFlex>
+              <StyledFlex>
+                <StyledInline>Shipping</StyledInline>
+                <StyledInline>{convertIntToMoneyString(this.state.shippingAmount)}</StyledInline>
+              </StyledFlex>
+              <StyledFlex>
+                <StyledInline>Total</StyledInline>
+                <StyledInline>{getTotal(this.state.cart, this.state.shippingAmount)}</StyledInline>
+              </StyledFlex>
+            </StyledRight>
+          </StyledGrid>
+        </Wrapper>
+      </div>
+    );
+  }
 }
 
 Cart.propTypes = {

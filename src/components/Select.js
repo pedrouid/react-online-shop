@@ -19,15 +19,11 @@ const StyledSelect = styled.select`
 `;
 
 
-const Select = ({ dark, options, emptyOption, capital, value, ...otherProps }) => (
+const Select = ({ dark, options, emptyOption, capital, ...otherProps }) => (
   <StyledSelect dark={dark} {...otherProps}>
     {(emptyOption) && <option key="emptyOption" disabled selected value>{emptyOption}</option>}
     {options.map(option => (
-      <option
-        key={option}
-        value={option.toLowerCase()}
-        selected={!!value && option.toLowerCase() === value.toLowerCase()}
-      >
+      <option key={option} value={option.toLowerCase()}>
         {(capital) ? capitalize(option) : option}
       </option>
     ))}
@@ -38,15 +34,13 @@ Select.propTypes = {
   options: PropTypes.array.isRequired,
   emptyOption: PropTypes.string,
   capital: PropTypes.bool,
-  dark: PropTypes.bool,
-  value: PropTypes.string,
+  dark: PropTypes.bool
 };
 
 Select.defaultProps = {
   emptyOption: '',
   capital: false,
-  dark: false,
-  value: ''
+  dark: false
 };
 
 export default Select;
