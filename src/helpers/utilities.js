@@ -116,7 +116,6 @@ export const capitalize = string =>
  * @return {String}
  */
 export const titleCase = (string) => {
-  console.log(string);
   const words = string.toLowerCase()
   .replace('and', '&')
   .replace('-', /\s/g)

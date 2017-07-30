@@ -25,7 +25,6 @@ class Router extends Component {
   }
   componentDidMount() {
     if (!getSession()) {
-      console.log(getSession());
       setSession();
     }
   }

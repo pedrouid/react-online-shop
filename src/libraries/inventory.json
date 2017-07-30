@@ -192,8 +192,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -216,8 +216,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -240,8 +240,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -264,8 +264,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -288,8 +288,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -312,8 +312,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -336,8 +336,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -360,8 +360,8 @@
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -384,8 +384,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -408,8 +408,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -432,8 +432,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -456,8 +456,8 @@
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -480,8 +480,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -504,8 +504,8 @@
       "category": "dresses",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "35.00",
-        "retailValue": "20.00",
+        "saleValue": "20.00",
+        "retailValue": "35.00",
         "currency": "GBP"
       },
       "variants" : [
@@ -528,8 +528,8 @@
       "category": "accessories",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "unitPrice": {
-        "saleValue": "20.00",
-        "retailValue": "10.00",
+        "saleValue": "10.00",
+        "retailValue": "20.00",
         "currency": "GBP"
       },
       "variants" : [],

@@ -90,13 +90,9 @@ const getUnitSubtotal = (quantity, unitPrice) => {
 };
 
 const getTotal = (cart, shippingAmount) => {
-  console.log('cart', cart);
   if (cart.subtotal && shippingAmount) {
     const subtotal = convertMoneyStringToInt(cart.subtotal);
-    console.log('subtotal', subtotal);
     const shipping = convertMoneyStringToInt(shippingAmount);
-    console.log('shipping', shipping);
-    console.log('SUM', subtotal + shipping);
     return convertIntToMoneyString(subtotal + shipping);
   }
   return null;
@@ -164,6 +160,7 @@ class Cart extends Component {
           <StyledLeft>
             <p>Shipping Options</p>
             <Select
+              value={this.state.shippingSelected}
               onChange={this.setShipping}
               options={Inventory.shipping.map(x => x.type)}
             />

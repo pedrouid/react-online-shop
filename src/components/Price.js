@@ -28,7 +28,6 @@ const StyledSale = styled(StyledSpan)`
 
 const Price = ({ unitPrice, fontSize, ...otherProps }) => (
   <StyledPrice {...otherProps}>
-    {console.log(unitPrice)}
     {(unitPrice.saleValue)
       ? <div>
         <StyledSale fontSize={fontSize}>{`${getCurrencySymbol(unitPrice.currency)} ${unitPrice.saleValue}`}</StyledSale>

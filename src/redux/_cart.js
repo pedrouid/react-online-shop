@@ -74,7 +74,6 @@ export const cartUpdate = (product, option) =>
 
     // updates localStorage with updatedCart
     updateCart(payload);
-    console.log('payload', payload);
 
     // updates redux store with updatedCart
     dispatch({
